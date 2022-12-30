@@ -9,23 +9,26 @@
 name = input("Enter file:")
 if len(name) < 1 : name = "mbox-short.txt"
 handle = open(name)
-x = 0
-counts = dict()
 
-for line in handle :
-    if line.find ('From ') : continue
-    x = x + 1
-    line = line.split()
-    mails = line[1]
-    counts[mails] = counts.get(mails, 0) + 1
-    print("mails", mails)
+for froms in handle:
+    # froms = froms.rstrip()
+    if not froms.startswith('From:'):
+        if froms.startswith('From'):
+            sender = froms.split(' ')
+            #print(sender) -> this produces multiple lists
+            sender = sender[1]
+            #print(sender) -> finds all the emails
+            people[sender] = people.get(sender,0) + 1
+            # print(people)
 
-most = None
-prolific = None
-for sender,amount in counts.items():
-    if most is None or amount > most:
-        print("sender, amount", sender, amount)
-        most = amount
-        prolific = sender
+maxemail = None
+maxcount = None
 
-print(prolific, most)
+for name,count in people.items():
+    #produces item lists
+    if maxemail is None or maxcount < count:
+        maxemail = name
+        maxcount = count
+
+print (maxemail, maxcount)
+
