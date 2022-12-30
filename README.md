@@ -1,6 +1,6 @@
 # Python for Everybody Specialization
 
-Coursera [Python for Everybody Specialization](https://www.coursera.org/specializations/python "Awesome stuff") is offered by University of Michigan.
+[Python for Everybody Specialization](https://www.coursera.org/specializations/python "Awesome stuff") is offered by University of Michigan.
 
 ## Overview
 
