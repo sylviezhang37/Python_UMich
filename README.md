@@ -1,10 +1,8 @@
 # Python for Everybody Specialization
 
-[Python for Everybody Specialization](https://www.coursera.org/specializations/python "Awesome stuff") is offered by University of Michigan.
+[Python for Everybody Specialization](https://www.coursera.org/specializations/python "Awesome stuff") offered by University of Michigan on Coursera.
 
-## Overview
-
-Specialization includes following courses:
+The specialization includes following courses:
 
 1. [Getting started with python](https://github.com/sersavn/coursera-python-for-everybody-specialization/tree/master/Course_1_Getting_Started_with_Python)
 2. [Python Data Structures](https://github.com/sersavn/coursera-python-for-everybody-specialization/tree/master/Course_2_Python_Data_Structures)
@@ -14,4 +12,4 @@ Specialization includes following courses:
 
 ### Other Information
 
-Sharing and storing my codes :)
+Sharing my codes :)
